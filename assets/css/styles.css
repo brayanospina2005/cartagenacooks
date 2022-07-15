@@ -319,6 +319,9 @@ body {
   left: 260px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 65px);
 }
 .sidebar.close ~ .home-section{
   left: 78px;
@@ -328,10 +331,13 @@ body {
   height: 60px;
   display: flex;
   align-items: center;
+  grid-column: 1/5;
+  grid-row: 1/2;
+  z-index: 1;
 }
 .home-section .home-content .bx-menu,
 .home-section .home-content .text{
-  color: #11101d;
+  color: #c6c6c6;
   font-size: 35px;
 }
 .home-section .home-content .bx-menu{
@@ -339,7 +345,7 @@ body {
   cursor: pointer;
   position: fixed;
   border-radius: 10px;
-  background-color: #e4e9f7;
+  background-color: #11101d;
   z-index: 1;
 }
 .home-section .home-content .text{
@@ -368,6 +374,15 @@ body {
   }
 }
 
+.slider-container{
+  grid-column: 1/9;
+  grid-row: 1/11;
+}
+
+.slider-container img{
+  height: 100%;
+  width: 100%;
+}
 /* finish header */
 
 /* Init main */
