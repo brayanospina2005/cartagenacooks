@@ -116,9 +116,10 @@ body {
   left: 0;
   height: 100%;
   width: 270px;
-  background: #11101d;
+  background: #000000;
   z-index: 100;
   transition: all 0.5s ease;
+  
 }
 .sidebar.close{
   width: 78px;
