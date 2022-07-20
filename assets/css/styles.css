@@ -272,11 +272,13 @@ body {
     left: 0;
   }
 }
+
+/* Init main */
 .slider-container img {
-  width:100%;
+  width: 100%;
   height: 600px;
 }
-/* Init main */
+
 .container-portafolio {
   margin: 0 15%;
   text-align: center;
@@ -322,7 +324,6 @@ body {
   width: 100%;
   object-fit: cover;
 }
-
 
 .hover-portafolio {
   position: absolute;
@@ -559,6 +560,12 @@ to {
 @keyframes entradaInputs {
 from { opacity: 0; }
 to { opacity: 1; }
+}
+
+.curso p {
+  width: 471px;
+  align-content: center;
+  margin-left: 25%;
 }
 /* init carousel */
 
