@@ -18,7 +18,6 @@
   .tituloh1{
     font-size: 35px;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
     margin-bottom: 0;
   }
 
@@ -30,7 +29,6 @@
     text-transform: uppercase;
     text-align: right;
     color: aliceblue;
-    font-family: "Josefin Slab";
     transform: rotateY(0deg) rotateX(0deg) scale(1);
     perspective: 379.546px;
     filter: drop-shadow(rgba(168, 243, 97, 0.952) 0px 10px 15px);
