@@ -987,3 +987,129 @@ to { opacity: 1; }
 }
 /* finish carousel */
 
+/* Init section eventos */
+.eventos {
+  margin: 0;
+  padding-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.eventos h1 {
+  text-shadow: 0 0 80px rgba(235, 242, 248, 0.932),0 0 32px rgba(233, 235, 241, 0.87);
+  margin: 1.5rem auto;
+  font-size: 1.6rem;
+  letter-spacing: .2em;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  letter-spacing: .2em;
+}
+
+.eventos p {
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  letter-spacing: .2em;
+}
+
+.list-event {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+  width: 100%;
+  min-width: 300px;
+  height: 200px;
+  gap: 2px;
+  margin: 20px auto;
+  justify-content:center;
+  align-items: center;
+  border-radius: 2%;
+  border: 1px solid #fff;
+  transition: all .4s ease-in-out;
+  position: relative;
+  box-shadow: -10px -10px rgba(7, 7, 7, 0.192),0 0 32px rgba(233, 235, 241, 0.87);
+}
+
+.list-event ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+} 
+
+.list-event img {
+  position: relative;
+  display: block;
+  height: 200px;
+  width: 100%;
+  margin-left: 10%;
+  object-fit: cover;
+  filter: grayscale(1);
+  overflow: hidden;
+  transition: all .4s cubic-bezier(.61,-.44,.33,1.39);
+  box-sizing: border-box;
+}
+
+.event-cont {
+  visibility: hidden; 
+}
+
+/* .event-cont img {
+  width: 265px;
+  height: 265px;
+} */
+
+.event-1:hover .event-cont {
+  visibility: visible;
+  margin-top: -5%;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+.event-2:hover .event-cont {
+  visibility: visible;
+  margin-top: -5%;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+.event-1:hover .img-event-1 {
+  height: 440px;
+  width: 35%;
+  overflow: visible;
+  object-fit: cover;
+  filter: none;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: -15%;
+  z-index: 5;
+  border-radius: 5px;
+  box-shadow: 0 0 18px 18px #050801 inset;
+  transition: .3s ease all;
+  transform: scale(0.9);
+}
+
+.event-2:hover .img-event-2 {
+  height: 440px;
+  width: 35%;
+  overflow: visible;
+  object-fit: cover;
+  filter: none;
+  position: absolute;
+  right: 50%;
+  margin-top: -15%;
+  z-index: 5;
+  border-radius: 5px;
+  box-shadow: 0 0 18px 18px #050801 inset;
+  transition: .3s ease all;
+  transform: scale(0.9);
+}
+.footer {
+  height: 600px;
+}
+
+
+
