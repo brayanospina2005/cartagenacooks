@@ -995,10 +995,32 @@ to { opacity: 1; }
   text-align: center;
 }
 
+.container-event {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}    
+.shadows {
+    position: absolute;
+    text-transform: uppercase;
+    text-shadow: -15px 5px 20px #ced0d3;
+    color: transparent;
+    letter-spacing: -0.05em;
+    font-family: 'Anton', Arial, sans-serif;
+    user-select: none;
+    text-transform: uppercase;
+    font-size: 100px;
+    transition: all 0.25s ease-out;
+}
+.shadows:hover {
+    text-shadow: -16px 6px 15px #FFD700;
+}
+
 .eventos h1 {
   text-shadow: 0 0 80px rgba(235, 242, 248, 0.932),0 0 32px rgba(233, 235, 241, 0.87);
-  margin: 1.5rem auto;
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   letter-spacing: .2em;
   display: flex;
   justify-content: center;
