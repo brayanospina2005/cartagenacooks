@@ -229,6 +229,14 @@ footer .container-footer .info-footer p{
     font-family: "Courier New", Courier, monospace;
     margin-right: 50px;
     text-align: justify;
+    display: flex;
+    
+  }
+
+  .container-footer .info-footer img{
+    max-width: 150px;
+    margin-right: 40px;
+    cursor: pointer;
   }
   footer .autor{
     color: #bfbdbd;
