@@ -129,7 +129,7 @@ body {
   display: flex;
   align-items: center;
 }
-.sidebar .logo-details i{
+.sidebar .logo-details img{
   font-size: 30px;
   color: #fff;
   height: 50px;
