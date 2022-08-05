@@ -1,296 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- iconos -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/licores.css">
+    <!-- libreria carrousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- libreria footer -->it
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./assets/css/capacitaciones.css">
+    <title>cartagenaCraftedCocktails</title>
     <link rel="shortcut icon" href="./assets/img/logo.png">
-    <title>Capacitaciones</title>
 </head>
-
-<body>
-    <!-- menu -->
-    <div class="sidebar close">
-        <div class="logo-details">
-        <!--     <i class='bx bxl-c-plus-plus'></i> -->
-        <a href="./index.html">
-            <img src="./assets/img/cartagena_2021_png_01.png" alt="logo">
-        </a>
-            <span class="logo_name">Cartagenacook</span>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href="./index.html">
-                    <i class='bx bx-home bx-tada'></i>
-                    <span class="link_name">Home</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="./index.html">Home</a></li>
-                </ul>
-            </li>
-            <li>
-                <div class="iocn-link">
-                    <a href="./Tienda.html">
-                        <i class='bx bxs-cart bx-tada'></i>
-                        <span class="link_name">Tienda</span>
-                    </a>
-                   
-                </div>
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="./Tienda.html">Tienda</a></li>
-                   
-
-                </ul>
-            </li>
-            
-            <li>
-                <a href="./capacitaciones.html">
-                    <i class='bx bxs-drink bx-tada' ></i>
-                    <span class="link_name">Capacitaciones</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="./capacitaciones.htmls">Capacitaciones</a></li>
-                </ul>
-            </li>
-            <li>
-                <div class="iocn-link">
-                    <a href="#">
-                        <i class='bx bx-book-alt'></i>
-                        <span class="link_name">Posts</span>
-                    </a>
-                    <i class='bx bxs-chevron-down arrow'></i>
-                </div>
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Posts</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Login Form</a></li>
-                    <li><a href="#">Card Design</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-line-chart'></i>
-                    <span class="link_name">Chart</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Chart</a></li>
-                </ul>
-            </li>
-            <li>
-                <div class="iocn-link">
-                    <a href="#">
-                        <i class='bx bx-plug'></i>
-                        <span class="link_name">Plugins</span>
-                    </a>
-                    <i class='bx bxs-chevron-down arrow'></i>
-                </div>
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Plugins</a></li>
-                    <li><a href="#">UI Face</a></li>
-                    <li><a href="#">Pigments</a></li>
-                    <li><a href="#">Box Icons</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-compass'></i>
-                    <span class="link_name">Explore</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Explore</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-history'></i>
-                    <span class="link_name">History</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">History</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-cog'></i>
-                    <span class="link_name">Setting</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Setting</a></li>
-                </ul>
-            </li>
-            <li>
-                <div class="profile-details">
-                    <div class="profile-content">
-                        <!--<img src="image/profile.jpg" alt="profileImg">-->
-                    </div>
-                    <div class="name-job">
-                        <div class="profile_name">Prem Shahi</div>
-                        <div class="job">Web Desginer</div>
-                    </div>
-                    <i class='bx bx-log-out'></i>
-                </div>
-            </li>
-        </ul>
+<body class="grid-container">
+   <!-- Init menu -->
+  <div class="sidebar close">
+    <div class="logo-details">
+    <!--     <i class='bx bxl-c-plus-plus'></i> -->
+    <a href="./index.html">
+        <img src="./assets/img/cartagena_2021_png_01.png" alt="logo">
+    </a>
+        <span class="logo_name"><span></span>Cartagena <br> Crafted</span>
     </div>
-    <section class="home-section">
-        <div class="home-content">
-            <i class='bx bx-menu'></i>
-            <span class="text">CARTAGENA COOKS </span>
-            <div class="text">crafted cocktails</div>
-        </div>
-        <div class="slider-container">
-            <img src="./assets/img/header.gif" alt="slider">
-        
+    <ul class="nav-links">
+        <li>
+            <a href="./index.html">
+                <i class='bx bx-home bx-tada'></i>
+                <span class="link_name">Home</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="./index.html">Home</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="iocn-link">
+                <a href="./Tienda.html">
+                    <i class='bx bxs-cart bx-tada'></i>
+                    <span class="link_name">Tienda</span>
+                </a>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="./Tienda.html">Tienda</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="./capacitaciones.html">
+              <i class='bx bxs-drink bx-tada' ></i>
+              <span class="link_name">Capacitaciones</span>
+          </a>
+          <ul class="sub-menu blank">
+              <li><a class="link_name" href="./capacitaciones.htmls">Capacitaciones</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+              <a href="#">
+                  <i class='bx bx-book-alt'></i>
+                  <span class="link_name">Posts</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow'></i>
           </div>
-       
-
-
-    </section>
-    <!-- init carrusel -->
-   <!--  <section class="section-carrusel">
-
-    </section> -->
-    <!-- finish carrusel -->
-    <section class="hero-section container-cards ">
-        <div class="card-grid">
-            <a class="card_" href="#">
-                <div class="card__background"
-                    style="background-image: url(./assets/img/licores/IMG_5220.jpg)">
-                </div>
-                <div class="card__content">
-                    <p class="card__category">Coctel</p>
-                    <h3 class="card__heading">Puerto Inka</h3>
-                </div>
-            </a>
-            <a class="card_" href="#">
-                <div class="card__background"
-                    style="background-image: url(./assets/img/licores/IMG_5151.jpg)">
-                </div>
-                <div class="card__content">
-                    <p class="card__category">Coctel</p>
-                    <h3 class="card__heading">Puerto Inka</h3>
-                </div>
-            </a>
-            <a class="card_" href="#">
-                <div class="card__background"
-                    style="background-image: url(./assets/img/licores/IMG-20220630-WA0074.jpg)">
-                </div>
-                <div class="card__content">
-                    <p class="card__category">Coctel</p>
-                    <h3 class="card__heading">Puerto Inka</h3>
-                </div>
-            </a>
-            <a class="card_" href="#">
-                <div class="card__background"
-                    style="background-image: url(./assets/img/licores/IMG_0213.jpg)">
-                </div>
-                <div class="card__content">
-                    <p class="card__category">Coctel</p>
-                    <h3 class="card__heading">Club de Caballeros</h3>
-                </div>
-            </a>
-            <a class="card_" href="#">
-                <div class="card__background"
-                    style="background-image: url(./assets/img/licores/Screenshot_20220419-120331_Instagram.jpg)">
-                </div>
-                <div class="card__content">
-                    <p class="card__category">Coctel</p>
-                    <h3 class="card__heading">Club de Caballeros</h3>
-                </div>
-            </a>
-            <a class="card_" href="#">
-                <div class="card__background"
-                    style="background-image: url(./assets/img/licores/Screenshot_20220419-120356_Instagram.jpg)">
-                </div>
-                <div class="card__content">
-                    <p class="card__category">Coctel</p>
-                    <h3 class="card__heading">Club de caballeros</h3>
-                </div>
-            </a>
-            <a class="card_" href="#">
-                <div class="card__background"
-                    style="background-image: url(./assets/img/licores/FB_IMG_1658946877626.jpg)">
-                </div>
-                <div class="card__content">
-                    <p class="card__category">Coctel</p>
-                    <h3 class="card__heading">Club de caballeros</h3>
-                </div>
-            </a>
-            <a class="card_" href="#">
-                <div class="card__background"
-                    style="background-image: url(./assets/img/licores/FB_IMG_1658946891018.jpg)">
-                </div>
-                <div class="card__content">
-                    <p class="card__category">Coctel</p>
-                    <h3 class="card__heading">La Solar</h3>
-                </div>
-            </a>
-        </div>
-    </section>
-      <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <h6>About</h6>
-              <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
-            </div>
-    
-            <div class="col-xs-6 col-md-3">
-              <h6>Categories</h6>
-              <ul class="footer-links">
-                <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-                <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-                <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-                <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-                <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-                <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-              </ul>
-            </div>
-    
-            <div class="col-xs-6 col-md-3">
-              <h6>Quick Links</h6>
-              <ul class="footer-links">
-                <li><a href="http://scanfcode.com/about/">About Us</a></li>
-                <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-                <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-                <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-              </ul>
+          <ul class="sub-menu">
+              <li><a class="link_name" href="#">Posts</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Login Form</a></li>
+              <li><a href="#">Card Design</a></li>
+          </ul>
+      </li>
+      <li>
+          <a href="#">
+              <i class='bx bx-line-chart'></i>
+              <span class="link_name">Chart</span>
+          </a>
+          <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Chart</a></li>
+          </ul>
+      </li>
+      <li>
+          <div class="iocn-link">
+              <a href="#">
+                  <i class='bx bx-plug'></i>
+                  <span class="link_name">Plugins</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+              <li><a class="link_name" href="#">Plugins</a></li>
+              <li><a href="#">UI Face</a></li>
+              <li><a href="#">Pigments</a></li>
+              <li><a href="#">Box Icons</a></li>
+          </ul>
+      </li>
+      <li>
+          <a href="#">
+              <i class='bx bx-compass'></i>
+              <span class="link_name">Explore</span>
+          </a>
+          <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Explore</a></li>
+          </ul>
+      </li>
+      <li>
+          <a href="#">
+              <i class='bx bx-history'></i>
+              <span class="link_name">History</span>
+          </a>
+          <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">History</a></li>
+          </ul>
+      </li>
+      <li>
+          <a href="#">
+              <i class='bx bx-cog'></i>
+              <span class="link_name">Setting</span>
+          </a>
+          <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Setting</a></li>
+          </ul>
+      </li>
+      <li>
+          <div class="profile-details">
+              <div class="profile-content">
+                  <!--<img src="image/profile.jpg" alt="profileImg">-->
+              </div>
+              <div class="name-job">
+                  <div class="profile_name">Prem Shahi</div>
+                  <div class="job">Web Desginer</div>
+              </div>
+              <i class='bx bx-log-out'></i>
+          </div>
+      </li>
+  </ul>
+</div>
+<section class="home-section">
+  <div class="home-content">
+      <i class='bx bx-menu'></i>
+  </div>
+</section>
+<!-- Finish menu -->
+<!-- Nav -->
+  <div class="nav">
+    <a href="https://api.whatsapp.com/message/HCQFBHKTV26SN1?autoload=1&app_absent=0" target="_blank"><img src="./assets/img/icono-wp-completo.png" alt="wtspp" id="whatsapp"></a>
+    <a href="https://www.rappi.com.co/restaurantes/900261612-cartagena-crafted-cocktails" target="_blank"><img src="./assets/img/icono_rappi.png" alt="facebook" id="rappi"></a>
+    <a href="https://www.instagram.com/cartagenacraftedcocktails/" target="_blank"><img src="./assets/img/icono_instagram.png" alt="instagram" id="instagram"></a>
+  </div>
+<!-- Init header -->
+    <header>
+      <div class="container-carrousel">
+        <div class="row">
+          <div class="col s12 ">
+            <h1 class="white-text center-alig tituloh1"> <strong>Vive la magia de un buen coctel <i class='bx bxs-mouse-alt bx-flip-horizontal bx-tada' style='color:#fbf9f9'  ></i></strong></h1>
+            <div class="carousel center">
+               <!--1-->
+              <div class="carousel-item">
+                  <h2 class="white-dark subtituloh2">Del Tropico</h2>
+                  <div class= "linea-division">
+                    <span></span>
+                  </div>         
+                  <img src="./assets/img/carrusel/fig_1.png" class="materialboxed" data-caption="Coctel a base de tequila, sal de chiles, conserva de mango y licor de naranja 100% artesanal.
+                  Cliente: la solar"alt="">
+              </div>
+              <!--2-->
+              <div class="carousel-item">
+                  <h2 class="white-dark subtituloh2">Please Don't Tell</h2>
+                  <div class= "linea-division">
+                    <span></span>
+                  </div>          
+                  <img src="./assets/img/carrusel/fig_2.png" class="materialboxed" data-caption="Vodka, jugo fresco de piña, licor de naranja, jugo de limón, cordial de durazno, extracto de zumo de uva fresco. Cliente: Club de Caballeros" alt="">
+              </div>
+              <!--3-->
+              <div class="carousel-item">
+                  <h2 class="white-dark subtituloh2">Coctel echo</h2>
+                  <div class= "linea-division">
+                    <span></span>
+                  </div>     
+                  <img src="./assets/img/carrusel/fig_3.png" class="materialboxed" data-caption="Coctel a base de tequila y mezcal, mieles de la casa, chiles ahumados, toronja rosada. Cliente: El Rancho de Pancho."alt="">
+              </div>
+               <!--4-->
+              <div class="carousel-item">
+                  <h2 class="white-dark subtituloh2">Pisco Sour</h2>
+                  <div class= "linea-division">
+                    <span></span>
+                  </div>        
+                  <img src="./assets/img/carrusel/fig_4.png" class="materialboxed" data-caption="Coctel a base de pisco, almíbar de lavanda y mariposa Guisante, cítricos de la casa. Ahumado con flor de lavanda. Elaborado para puerto inka" alt="">
+              </div>
+              <!--5-->
+              <div class="carousel-item">
+                  <h2 class=" subtituloh2">Tequila Mezcal</h2>
+                  <div class= "linea-division">
+                    <span></span>
+                  </div>        
+                  <img src="./assets/img/carrusel/fig_5.png" class="materialboxed" data-caption="Tequila, Licor de naranja, Limón meyer, Conserva de mango, Cascos de mango y Sal de rocoto. Coctel Punto de Venta"alt="">
+              </div>
+              <!--6-->
+              <div class="carousel-item">
+                  <h2 class="white-dark subtituloh2">New York sour</h2>
+                  <div class= "linea-division">
+                    <span></span>
+                  </div>       
+                  <img src="./assets/img/carrusel/fig_6.png" class="materialboxed" data-caption="Whisky, almibar simple, limón, Vino tinto, emulsionante natural. Cliente: Club de Caballeros"alt="">
+              </div>
             </div>
           </div>
+        </div>
+      </div> 
+  </header>
+   <!-- Finish header -->
+   <!-- Init main -->
+  <main>
+  <section class="container-tittle">
+   <h1 class="tittle-main">
+    <span>
+      Ruta de asesoría
+    </span>
+  </h1>
+  <p class="p-main">
+    &mdash; Desde <strong>Cartagena Crafted Cocktails</strong> queremos redireccionar tu estrategia de bar de manera innovadora, <strong>diseñando cocteles a la medida </strong>del negocio, <strong>capacitando </strong> ademas al personal en su elaboración  para asegurarte un <strong>éxito rotundo</strong>. &mdash;
+  </p>
+</section>
+  <section class="container-main">
+        <div class="one">
+          <div class="circulo">1<i class='bx bx-search-alt bx-tada' style='color:rgba(255,215,0,0.53)' ></i></div> 
+          <h3>Diagnóstico <br> de Portafolio<br><br></h3>
           <hr>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
-           <a href="./equipo.html">Click here</a>.
-              </p>
-            </div>
-    
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <ul class="social-icons">
-                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-              </ul>
-            </div>
+          <div>
+            Validamos tu barra para detectar oportunidades de mejora y repensar una propuesta de valor que impacte
           </div>
         </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/b3f19fcb86.js" crossorigin="anonymous"></script>
+        <div class="two">
+          <div class="circulo">2<i class='bx bx-bulb bx-flashing' style='color:rgba(255,215,0,0.53)' ></i></div>
+          <h3>Propuesta <br> Personalizada<br><br></h3>
+          <hr>
+          <div>
+            Te compartimos la formula perfecta para hacer crecer tu negocio, diseñada a la medida de tus necesidades.
+          </div>
+        </div>
+        <div class="three">
+          <div class="circulo">3<i class='bx bx-file bx-burst' style='color:rgba(255,215,0,0.53)' ></i></div>
+          <h3>Acuerdo <br>Óptimo<br><br></h3>
+          <hr>
+          <div>
+           Para desplegar la magia, realiza la consignación del 10% del servicio por transferencia o efectivo.
+          </div>
+        </div>
+        <div class="four">
+          <div class="circulo">4<i class='bx bxs-drink bx-spin' style='color:rgba(255,215,0,0.53)' ></i></div>
+          <h3>Explosión <br>de Cocktails<br><br></h3>
+          <hr>
+          <div>
+            El truco esta en la experiencia de usuario, por eso recreamos un espacio en donde sean ellos quienes elijan los productos estrellas.
+          </div>
+        </div>
+        <div class="five">
+          <div class="circulo">5<i class='bx bxs-graduation bx-tada' style='color:rgba(255,215,0,0.53)' ></i></div>
+          <h3>Capacitación <br>del Talento<br><br></h3>
+          <hr>
+          <div>
+            Creces en la medida en que tu equipo de bartender este alineado con la estrategia, dejanos incentivar su creatividad y hacerlos parte de la meta.
+          </div>
+        </div>
+        <div class="six">
+          <div class="circulo">6<i class='bx bxs-party bx-tada' style='color:rgba(255,215,0,0.53)' ></i></div>
+          <h3>Inaguración <br>de la Carta<br><br></h3>
+          <hr>
+          <div>
+            Te brindamos 2 días de acompañamiento como mínimo, proporcionandote biblias descriptivas de procesos y costos.
+          </div>
+        </div>
+    </section>
+   </main>
+   <!-- Finish main -->
+   <!-- Init Section2 -->
+  <div class="container-event"> 
+    <div class="shadows">
+      <span>N</span>
+      <span>u</span>
+      <span>e</span>
+      <span>s</span>
+      <span>t</span>
+      <span>r</span>
+      <span>o</span>
+      <span>s</span>
+    </div>  
+    <h1>Clientes</h1>
+  </div> 
+  <section class="hero-section container-cards ">
+    <div class="card-grid">
+        <a class="card_" href="#">
+            <div class="card__background"
+                style="background-image: url(./assets/img/licores/IMG_5220.jpg)">
+            </div>
+            <div class="card__content">
+                <p class="card__category">Coctel</p>
+                <h3 class="card__heading">Puerto Inka</h3>
+            </div>
+        </a>
+        <a class="card_" href="#">
+            <div class="card__background"
+                style="background-image: url(./assets/img/licores/IMG_5151.jpg)">
+            </div>
+            <div class="card__content">
+                <p class="card__category">Coctel</p>
+                <h3 class="card__heading">Puerto Inka</h3>
+            </div>
+        </a>
+        <a class="card_" href="#">
+            <div class="card__background"
+                style="background-image: url(./assets/img/licores/IMG-20220630-WA0074.jpg)">
+            </div>
+            <div class="card__content">
+                <p class="card__category">Coctel</p>
+                <h3 class="card__heading">Puerto Inka</h3>
+            </div>
+        </a>
+        <a class="card_" href="#">
+            <div class="card__background"
+                style="background-image: url(./assets/img/licores/IMG_0213.jpg)">
+            </div>
+            <div class="card__content">
+                <p class="card__category">Coctel</p>
+                <h3 class="card__heading">Club de Caballeros</h3>
+            </div>
+        </a>
+        <a class="card_" href="#">
+            <div class="card__background"
+                style="background-image: url(./assets/img/licores/Screenshot_20220419-120331_Instagram.jpg)">
+            </div>
+            <div class="card__content">
+                <p class="card__category">Coctel</p>
+                <h3 class="card__heading">Club de Caballeros</h3>
+            </div>
+        </a>
+        <a class="card_" href="#">
+            <div class="card__background"
+                style="background-image: url(./assets/img/licores/Screenshot_20220419-120356_Instagram.jpg)">
+            </div>
+            <div class="card__content">
+                <p class="card__category">Coctel</p>
+                <h3 class="card__heading">Club de caballeros</h3>
+            </div>
+        </a>
+        <a class="card_" href="#">
+            <div class="card__background"
+                style="background-image: url(./assets/img/licores/FB_IMG_1658946877626.jpg)">
+            </div>
+            <div class="card__content">
+                <p class="card__category">Coctel</p>
+                <h3 class="card__heading">Club de caballeros</h3>
+            </div>
+        </a>
+        <a class="card_" href="#">
+            <div class="card__background"
+                style="background-image: url(./assets/img/licores/FB_IMG_1658946891018.jpg)">
+            </div>
+            <div class="card__content">
+                <p class="card__category">Coctel</p>
+                <h3 class="card__heading">La Solar</h3>
+            </div>
+        </a>
+    </div>
+  </section>
+   <!-- Finish Section2 -->
+   <!-- Init Footer -->
+<footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+        </div>
 
-    <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/tienda_cocteles.js"></script>
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+       <a href="./equipo.html">Click here</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+   <!-- Finish Footer -->
+   <!-- Init Script -->
+<script src="https://kit.fontawesome.com/b3f19fcb86.js" crossorigin="anonymous"></script>
+<script src="./assets/js/app.js"></script>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./assets/js/capacitaciones.js"></script>
+<!-- menu -->
+<script>
+    
+  $(".button-collapse").sideNav();
+  
+ </script>
+ <!-- Finish Script -->
 </body>
-
 </html>

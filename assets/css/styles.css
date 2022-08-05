@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body { 
   background: #050801;
   height: 100vh;
@@ -455,7 +456,47 @@ body {
   opacity: 0;
  }
 /* finish header */
+/* header ---nav---*/
+.nav {
+  z-index: 1000;
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  position: fixed;
+  left: 90%;
+  margin-top: 20%;
+  margin-right: 62.5%;
+  transform: rotateY(0deg) rotateX(0deg) scale(1);
+  perspective: 379.546px;
+}
 
+#whatsapp {
+  perspective: 450px;
+  filter: drop-shadow(rgba(23, 219, 49, 0.986) 25px 10px 25px);
+}
+
+#rappi { 
+  filter: drop-shadow(rgba(219, 111, 23, 0.986) 25px 10px 25px);
+}
+
+#instagram{ 
+  width: 55px;
+  height: 55px;  
+  filter: drop-shadow(rgba(219, 23, 203, 0.986) 25px 10px 25px);
+  margin: 20px; 
+}
+
+#whatsapp, #rappi {
+  margin: 20px;
+  width: 45px;
+  height: 50px; 
+}
+
+#rappi:hover, #whatsapp:hover, #instagram:hover {
+  transform: scale(1.5);
+}
 /* Init main */
 .slider-container img {
   width: 100%;
@@ -529,13 +570,23 @@ body {
   transition: .5s ease;
   opacity: 0.9;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .img-grid:hover .hover-portafolio {
   cursor: pointer;
   height: 100%;
   background-size: 100% 100%;
+}
+
+.hover-portafolio h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 .hover-portafolio a {
@@ -1072,7 +1123,8 @@ to { opacity: 1; }
   display: flex;
   align-items: center;
   justify-content: center;
-}    
+}   
+
 .shadows {
     position: absolute;
     text-transform: uppercase;
@@ -1148,6 +1200,20 @@ to { opacity: 1; }
   visibility: hidden; 
 }
 
+.event-cont img {
+  width: 65px;
+  height: 65px;
+  filter: none;
+  position: absolute;
+  left: 30%;
+  top: 90px;
+}
+
+.icono-inst2 img{
+  right: 30%;
+  left: 0;
+  
+}
 /* .event-cont img {
   width: 265px;
   height: 265px;
@@ -1369,6 +1435,4 @@ to { opacity: 1; }
   }
 }
 /* finish footer */
-
-
 
