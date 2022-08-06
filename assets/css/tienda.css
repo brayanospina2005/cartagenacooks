@@ -225,7 +225,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    grid-column: 1/5;
+    grid-column: 1/4;
     grid-row: 1/2;
     z-index: 1;
     flex-wrap: wrap;
@@ -286,7 +286,7 @@ a{
     text-decoration: none;
 }  
 .main{
-    max-width: 1200px;
+    max-width: 2000px;
     margin: 0 auto;
     margin-left: 70px;
     background-image: linear-gradient(15deg, #191919 0%, #343637 150%);
@@ -351,7 +351,7 @@ a{
   }
   
   .main .card {
-    background-color: white;
+    background-color: #1c1b1b ;
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -361,7 +361,7 @@ a{
   
   .main .card_content {
     padding: 1rem;
-    background: linear-gradient(to bottom left, #b1b829 40%, #83431b 100%);
+    background: linear-gradient(to bottom left, #1c1b1b 40%, #343434  100%);
   }
   @media screen and (min-width: 300px) and (max-width: 400px){
     .main{
@@ -384,6 +384,7 @@ a{
     line-height: 1.5;
     margin-bottom: 1.25rem;    
     font-weight: 400;
+    height: 70px;
   }
   
   /* finish section of shop */
@@ -479,7 +480,8 @@ a{
 {
   .site-footer
   {
-    padding-bottom:0
+    padding-bottom:0;
+    margin-left: 0;
   }
   .site-footer .copyright-text,.site-footer .social-icons
   {

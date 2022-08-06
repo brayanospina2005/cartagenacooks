@@ -225,7 +225,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    grid-column: 1/5;
+    grid-column: 1/4;
     grid-row: 1/2;
     z-index: 1;
     flex-wrap: wrap;
@@ -498,7 +498,8 @@
 {
   .site-footer
   {
-    padding-bottom:0
+    padding-bottom:0;
+    margin-left: 0;
   }
   .site-footer .copyright-text,.site-footer .social-icons
   {
