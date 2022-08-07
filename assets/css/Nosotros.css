@@ -413,7 +413,7 @@ p {
     text-shadow: -16px 6px 15px #FFD700;
 }
 
-.eventos h1 {
+.eventos h1, .section-local h1 {
   text-shadow: 0 0 80px rgba(235, 242, 248, 0.932),0 0 32px rgba(233, 235, 241, 0.87);
   font-size: 2.6rem;
   letter-spacing: .2em;
@@ -421,8 +421,38 @@ p {
   justify-content: center;
   position: relative;
   letter-spacing: .2em;
+  font-weight: bold;
+}
+/* Section mapa */
+
+.section-local {
+  margin: 100px 0px;
+  width: 100%;
 }
 
+.section-local p {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#local-img {
+  width: 300px;
+  box-shadow: -10px -10px rgba(7, 7, 7, 0.192),0 0 32px rgba(233, 235, 241, 0.87);
+
+}
+
+.grid-visitanos {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+#mapa iframe {
+  border-radius: 10%;
+  box-shadow: -10px -10px rgba(7, 7, 7, 0.192),0 0 32px rgba(233, 235, 241, 0.87);
+}
 /* init footer */
 .site-footer
 {
@@ -598,7 +628,7 @@ p {
   .slider-container img {
     width: 300px;
   }
-  .tittle-carousel {
+  .tittle-carousel, .section-local p {
     margin: 0px;
     margin-bottom: 10%;
   }
@@ -608,13 +638,13 @@ p {
     left: 80%;
   }
 
-  .grid-history {
+  .grid-history, .grid-visitanos {
     grid-template-columns: repeat(1,100%);
     margin-left: 70px;
     margin-right: 0px;
     text-align: center;
   }
-  .collage-img img { 
+  .collage-img img, #mapa iframe, #local-img { 
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -631,5 +661,8 @@ p {
     margin: 30px;
     margin-left: 0;
   }
-
+  
+  .section-local h1 {
+    margin-bottom: 100px;
+  }
 } 
