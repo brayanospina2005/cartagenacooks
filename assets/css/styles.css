@@ -440,6 +440,7 @@ body {
   text-shadow: 0 0 80px rgba(235, 242, 248, 0.932),0 0 32px rgba(233, 235, 241, 0.87);
 	width: 100%;
 	margin: 100px;
+  margin-left: 30px;
   font-size: 1.4rem;
   text-align: center;
 }
@@ -1420,6 +1421,7 @@ to { opacity: 1; }
       margin: 30px;
       margin-left: 10px;
     }
+  
     .container-event {
       height: 20vh;
       margin: 30px;

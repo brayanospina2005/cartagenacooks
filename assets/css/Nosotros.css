@@ -1,8 +1,21 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Josefin+Slab';
+
 *{
-    padding: 0%;
-    margin: 0% ;
-}
-.sidebar{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+ 
+  body { 
+    background: #050801;;
+    height: 100vh;
+    color: white;
+    font-family: "Josefin Slab";
+  }
+  /* Init menu */
+  .sidebar{
     font-family: 'Poppins', sans-serif;
     position: fixed;
     top: 0;
@@ -208,14 +221,12 @@
   }
   .home-section{
     position: relative;
-    background: #E4E9F7;
-    height: 100vh;
     left: 260px;
     width: calc(100% - 260px);
     transition: all 0.5s ease;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(10, 65px);
+    grid-template-rows: repeat(2, 65px);
   }
   .sidebar.close ~ .home-section{
     left: 78px;
@@ -233,7 +244,6 @@
   }
   .home-section .home-content .bx-menu,
   .home-section .home-content .text{
-    color: #c6c6c6;
     font-size: 35px;
   }
   .home-section .home-content .bx-menu{
@@ -249,7 +259,8 @@
     font-weight: 600;
     margin-left: 80px;
   }
-  @media (max-width: 400px) {
+  
+  @media (max-width: 700px) {
     .sidebar.close .nav-links li .sub-menu{
       display: none;
     }
@@ -262,7 +273,6 @@
     .home-section{
       left: 78px;
       width: calc(100% - 78px);
-      z-index: 100;
     }
     .sidebar.close ~ .home-section{
       width: 100%;
@@ -270,147 +280,151 @@
     }
   }
   
-.slider-container{
-    grid-column: 1/9;
-    grid-row: 1/11;
+  .slider-container{
+    align-items: center;
   }
-  
-  .slider-container img{
-    height: 100vh;
-    width: 100%;
-  }
-  
-/* finish header */
 
-/* init carrousel */
+  .slider-container img {
+    width: 500px;
+    height: 500px;
+    opacity: 0.4;
+  }
+  
+/* Finish menu */  
 
-/* finish carousel */
-/* start cards */
+/* header ---nav---*/
+.nav {
+  z-index: 1000;
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  position: fixed;
+  left: 90%;
+  margin-top: 20%;
+  margin-right: 62.5%;
+  transform: rotateY(0deg) rotateX(0deg) scale(1);
+  perspective: 379.546px;
+}
 
+#whatsapp {
+  perspective: 450px;
+  filter: drop-shadow(rgba(23, 219, 49, 0.986) 25px 10px 25px);
+}
 
-:root{
-    --background-dark: #2d3548;
-    --text-light: rgba(255,255,255,0.6);
-    --text-lighter: rgba(255,255,255,0.9);
-    --spacing-s: 8px;
-    --spacing-m: 16px;
-    --spacing-l: 24px;
-    --spacing-xl: 32px;
-    --spacing-xxl: 64px;
-    --width-container: 1200px;
-  }
-  
- 
-  
-  html{
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-  }
-  
-  body{
-    height: 100%;
-  }
-  
-  .hero-section{
-    align-items: flex-start;
-    background-image: linear-gradient(15deg, #191919 0%, #343637 150%);
-    display: flex;
-    min-height: 100%;
-    margin-left: 70px;
-    justify-content: center;
-    padding: var(--spacing-xxl) var(--spacing-l);
-  }
-  
-  .card-grid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: var(--spacing-l);
-    grid-row-gap: var(--spacing-l);
-    max-width: var(--width-container);
-    width: 100%;
-  }
-  
-  @media(min-width: 540px){
-    .card-grid{
-      grid-template-columns: repeat(2, 1fr); 
-    }
+#rappi { 
+  filter: drop-shadow(rgba(219, 111, 23, 0.986) 25px 10px 25px);
+}
 
+#instagram{ 
+  width: 55px;
+  height: 55px;  
+  filter: drop-shadow(rgba(219, 23, 203, 0.986) 25px 10px 25px);
+  margin: 20px; 
+}
+
+#whatsapp, #rappi {
+  margin: 20px;
+  width: 45px;
+  height: 50px; 
+}
+
+#rappi:hover, #whatsapp:hover, #instagram:hover {
+  transform: scale(1.5);
+}
+/* section historia */
+.container-tittle {
+  width: 80%;
+  min-width: 300px;
+  text-align: center;
+  position: absolute;
+  z-index: 1000;
+}
+
+.tittle-carousel {
+	letter-spacing: .2em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;  
+  text-shadow: 0 0 80px rgba(235, 242, 248, 0.932),0 0 32px rgba(233, 235, 241, 0.87);
+	width: 100%;
+	margin: 100px;
+  margin-left: 30px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.tittle-carousel span {
+  	font: 300 3em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+/* Clip Background Image */
+	  background: url(../img/oro.gif) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+/* Animate Background Image */
+	  -webkit-text-fill-color: transparent;
   }
-  
-  @media(min-width: 960px){
-    .card-grid{
-      grid-template-columns: repeat(4, 1fr); 
-      
-    }
-  }
-  @media screen and (min-width: 300px) and (max-width: 500px){
-    .hero-section{
-        margin-left: 0%;
-    }
-  }
-  
-  .card_{
-    list-style: none;
-    position: relative;
-  }
-  
-  .card_:before{
-    content: '';
-    display: block;
-    padding-bottom: 150%;
-    width: 100%;
-  }
-  
-  .card__background{
-    background-size: cover;
-    background-position: center;
-    border-radius: var(--spacing-l);
-    bottom: 0;
-    filter: brightness(0.75) saturate(1.2) contrast(0.85);
-    left: 0;
+
+p {
+  font-size: 22px;
+  margin-right: 52px;
+}
+.grid-history {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-left: 100px;
+}
+
+/* Section mision y vision */
+
+.div-Mvision {
+  margin-left: 150px;
+  text-align: center;
+}
+
+.container-event {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}   
+
+.shadows {
     position: absolute;
-    right: 0;
-    top: 0;
-    transform-origin: center;
-    transform: scale(1) translateZ(0);
-    transition: 
-      filter 200ms linear,
-      transform 200ms linear;
-  }
-  
-  .card_:hover .card__background{
-    transform: scale(1.05) translateZ(0);
-  }
-  
-  .card-grid:hover > .card_:not(:hover) .card__background{
-    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-  }
-  
-  .card__content{
-    left: 0;
-    padding: var(--spacing-l);
-    position: absolute;
-    top: 0;
-  }
-  
-  .card__category{
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-bottom: var(--spacing-s);
     text-transform: uppercase;
-  }
-  
-  .card__heading{
-    color: var(--text-lighter);
-    font-size: 1.9rem;
-    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
-    line-height: 1.4;
-    word-spacing: 100vw;
-  }
+    text-shadow: -15px 5px 20px #ced0d3;
+    color: transparent;
+    letter-spacing: -0.05em;
+    font-family: 'Anton', Arial, sans-serif;
+    user-select: none;
+    text-transform: uppercase;
+    font-size: 100px;
+    transition: all 0.25s ease-out;
+}
 
-  /* init footer */
-  .site-footer
+.shadows:hover {
+    text-shadow: -16px 6px 15px #FFD700;
+}
+
+.eventos h1 {
+  text-shadow: 0 0 80px rgba(235, 242, 248, 0.932),0 0 32px rgba(233, 235, 241, 0.87);
+  font-size: 2.6rem;
+  letter-spacing: .2em;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  letter-spacing: .2em;
+}
+
+/* init footer */
+.site-footer
 {
   background-color:#26272b;
   padding:45px 0 20px;
@@ -418,7 +432,6 @@
   line-height:24px;
   color:#737373;
   margin-left: 70px;
-
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .site-footer hr
@@ -499,7 +512,7 @@
   .site-footer
   {
     padding-bottom:0;
-    margin-left: 0;
+    margin-left: 0px;
   }
   .site-footer .copyright-text,.site-footer .social-icons
   {
@@ -578,3 +591,45 @@
   }
 }
 /* finish footer */
+
+/*---- mediaquerys ---- */
+@media (max-width:767px)
+{
+  .slider-container img {
+    width: 300px;
+  }
+  .tittle-carousel {
+    margin: 0px;
+    margin-bottom: 10%;
+  }
+  .nav
+  {
+    margin-right:0;
+    left: 80%;
+  }
+
+  .grid-history {
+    grid-template-columns: repeat(1,100%);
+    margin-left: 70px;
+    margin-right: 0px;
+    text-align: center;
+  }
+  .collage-img img { 
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .div-Mvision {
+    margin: 30px;
+    margin-left: 70px;
+  }
+  .shadows {
+    font-size: 60px;
+  } 
+  .container-event {
+    height: 20vh;
+    margin: 30px;
+    margin-left: 0;
+  }
+
+} 
