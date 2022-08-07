@@ -13,7 +13,9 @@
     height: 100vh;
     color: white;
     font-family: "Josefin Slab";
+    width: 100%;
   }
+
   /* Init menu */
   .sidebar{
     font-family: 'Poppins', sans-serif;
@@ -247,7 +249,7 @@
     font-size: 35px;
   }
   .home-section .home-content .bx-menu{
-    margin: 0 15px;
+    margin: 0 15px 0px;
     cursor: pointer;
     position: fixed;
     border-radius: 10px;
@@ -303,7 +305,6 @@
   position: fixed;
   left: 90%;
   margin-top: 20%;
-  margin-right: 62.5%;
   transform: rotateY(0deg) rotateX(0deg) scale(1);
   perspective: 379.546px;
 }
@@ -350,8 +351,7 @@
 	padding: 1.5em 0em;  
   text-shadow: 0 0 80px rgba(235, 242, 248, 0.932),0 0 32px rgba(233, 235, 241, 0.87);
 	width: 100%;
-	margin: 100px;
-  margin-left: 30px;
+	margin: 100px 0px;
   font-size: 1.4rem;
   text-align: center;
 }
@@ -593,7 +593,7 @@ p {
 /* finish footer */
 
 /*---- mediaquerys ---- */
-@media (max-width:767px)
+@media (max-width:1200px)
 {
   .slider-container img {
     width: 300px;

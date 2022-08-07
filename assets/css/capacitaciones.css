@@ -298,7 +298,6 @@
   position: fixed;
   left: 90%;
   margin-top: 20%;
-  margin-right: 62.5%;
   transform: rotateY(0deg) rotateX(0deg) scale(1);
   perspective: 379.546px;
 }
@@ -488,7 +487,7 @@ nav {
   grid-gap: 5px;
   grid-auto-rows: minmax(100px, auto);
   align-items: center;
-  margin: 20px;
+  margin: 20px 0 20px;
   }
  
 
